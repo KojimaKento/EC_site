@@ -1,0 +1,70 @@
+.purchase_body {
+  width: 866px;
+  height: 1000px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+.purchase_confirm_body {
+  width: 866px;
+  height: 900px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+p {
+  font-weight: 600;
+  font-size: 24px;
+  width: 866px;
+}
+
+.purchase_production {
+  margin-top: 32px;
+  margin-bottom: 50px;
+}
+
+select {
+  display: block;
+  width: 190px;
+  height: 50px;
+  margin-top: 10px;
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+.price_and_yen {
+  display: flex;
+  margin-top: 50px;
+}
+
+.show_price {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.show_price_yen {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+button {
+  border: solid 1px #3300FF;
+  background-color: #005FFF;
+  width: 866px;
+  height: 50px;
+  color: #fff;
+}
+
+.purchase_btn {
+  margin-top: 50px;
+  border-radius: 6px;
+  font-weight: 700;
+  width: 866px;
+}

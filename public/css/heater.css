@@ -1,0 +1,97 @@
+.heater_body {
+  width: 866px;
+  height: 100px;
+  background-color: #EEFFFF;
+  padding-bottom: 8px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heater_body a {
+  text-decoration: none;
+}
+
+.title_search {
+  display: flex;
+}
+
+.heater_title {
+  margin-left: 50px;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+.heater_search {
+  padding-top: 20px;
+  margin-left: 100px;
+}
+
+.heater_search .search_input {
+  width: 300px;
+  height: 30px;
+  padding-left: 10px;
+  color: gray;
+  border-radius: 2px;
+  border: solid 1px gray;
+}
+
+.heater_search .search_btn {
+  width: 50px;
+  height: 30px;
+  text-align: center;
+}
+
+
+
+.heater_text {
+  color: #005FFF;
+}
+
+.login_register_contents {
+  display: flex;
+  margin-top: 10px;
+}
+
+.login {
+  margin-left: auto;
+}
+.login_text {
+  display: block;
+  margin-left: 10px;
+  font-weight: 700;
+  color: black;
+}
+
+.register {
+  margin-right: 10px;
+}
+
+.register_text {
+  display: block;
+  margin-left: 10px;
+  font-weight: 700;
+  color: black;
+}
+
+.login_user {
+  margin-left: auto;
+  display: flex;
+}
+
+.username_text {
+  display: block;
+  margin-left: 710px;
+  margin-right: 10px;
+  font-weight: 700;
+  color: black;
+  /* font-size: 20px; */
+  font-family:メイリオ;
+}
+
+.heater_body .dropdown-item {
+  display: block;
+  margin-left: 10px;
+  font-weight: 700;
+  color: black;
+}

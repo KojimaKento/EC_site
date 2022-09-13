@@ -1,0 +1,56 @@
+.home_body {
+  width: 866px;
+  height: 580px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+.home_username .login_username_text {
+  font-size: 40px;
+  /* font-weight: 700; */
+  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+.home_creator {
+  display: flex;
+}
+
+.home_creator .creator_name {
+  font-size: 13px;
+}
+
+.home_creator .creator_type {
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.LoginUser_btn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 50px;
+  text-align: center;
+  background-color: #136FFF;
+  font-size: 20px;
+  color: black;
+  border-radius:4px;
+}
+
+.home_profile {
+  height: 120px;
+  border: solid 1px #bbb;
+  border-radius:6px;
+  padding: 10px;
+}
+
+
+.home_to_transition {
+  margin-top: 60px;
+}
+
+.link_text {
+  font-size: 20px;
+}

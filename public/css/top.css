@@ -1,0 +1,71 @@
+.top_body {
+  width: 866px;
+  height: 1950px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+.list_title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.list_quantity {
+  display: flex;
+  margin-top: 5px;
+}
+
+.stock_text {
+  margin-right: 10px;
+  width: 46px;
+  height: 24px;
+  border: solid 1px #3300FF;
+  background-color: #005FFF;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+}
+
+.stock_numbers {
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.quantity_text {
+  font-weight: 700;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.price_contents {
+  display: flex;
+}
+
+.list_price {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.list_yen {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
+.listing_delete {
+  margin-left: auto;
+  display: block;
+}
+
+nav {
+  margin-left: 630px;
+  margin-bottom: 50px;
+  /* margin-right: auto; */
+  display: inline-block;
+}
+

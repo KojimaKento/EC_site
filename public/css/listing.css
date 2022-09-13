@@ -1,0 +1,240 @@
+.listing_body {
+  width: 866px;
+  height: 1100px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+.production {
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+input {
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+  display: block;
+}
+
+textarea {
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+}
+
+.input_data {
+  height: 70px;
+  width: 866px;
+}
+
+.input_title {
+  height: 40px;
+  width: 866px;
+}
+
+.input_price {
+  height: 40px;
+  width: 100px;
+}
+
+.input_explanation {
+  height: 110px;
+  width: 866px;
+}
+
+.sell_quantity {
+  display: flex;
+}
+
+.input_quantity {
+  height: 40px;
+  width: 200px;
+}
+
+.quantity {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+button {
+  border: solid 1px #3300FF;
+  background-color: #005FFF;
+}
+
+.listing_btn {
+  margin-top: 50px;
+  height: 50px;
+  width: 866px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+
+/* confirm */
+.confirm_title {
+  height: 40px;
+  width: 866px;
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+}
+
+.confirm_data {
+  height: 70px;
+  width: 866px;
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+}
+
+.confirm_price {
+  height: 40px;
+  width: 100px;
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+}
+
+.confirm_quantity {
+  height: 40px;
+  width: 200px;
+  border: solid 1px #3300FF;
+  background-color: #BAD3FF;
+  border-radius: 6px;
+}
+
+.confirm_explanation {
+  height: 110px;
+  width: 866px;
+}
+
+.confirm_body {
+  width: 866px;
+  height: 1100px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+
+/* complete */
+.complete_body {
+  width: 866px;
+  height: 766px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+}
+
+
+
+
+/* listing.show */
+
+/* .show_body {
+  width: 866px;
+  height: 1150px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 50px;
+} */
+
+p {
+  font-weight: 600;
+  font-size: 24px;
+  width: 866px;
+}
+
+.stock_contents {
+  display: flex;
+}
+.stock_text {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.show_production {
+  margin-top: 32px;
+}
+
+.show_explanation {
+  height: 328px;
+  width: 816px;
+  border: solid 1px #3300FF;
+  border-radius: 4px;
+  background-color: #BAD3FF;
+  margin-top: 5px;
+  padding: 20px;
+}
+
+.explanation_title {
+  font-weight: 600;
+  font-size: 24px;
+  width: 866px;
+  margin-top: 110px;
+}
+
+.explanation_texts {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.show_price_contents {
+  display: flex;
+  width: 866px;
+  margin-top: 50px;
+}
+
+.price_text {
+  font-weight: 600;
+  font-size: 30px;
+  color: #005FFF;
+}
+
+.price_and_yen {
+  margin-left: auto;
+  display: flex;
+}
+
+.show_price {
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.show_price_yen {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.support_price {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+button {
+  border: solid 1px #3300FF;
+  background-color: #005FFF;
+  width: 866px;
+  height: 50px;
+  color: #fff;
+}
+
+.listing_show_btn {
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 80px;
+}

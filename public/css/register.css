@@ -1,0 +1,49 @@
+/* body {
+  background-image: url("../image/dannie-jing-3GZlhROZIQg-unsplash.jpg");
+  background-size: cover;
+  height: 644.97px;
+} */
+
+.app {
+  margin-top: 0;
+}
+
+.card {
+  /* margin-top: 100px; */
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+}
+
+.card_register {
+  width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.login_body {
+  height: 734px;
+  background-image: url("../image/dannie-jing-3GZlhROZIQg-unsplash.jpg");
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.register_body {
+  height: 734px;
+  background-image: url("../image/raychan-jlMZ7_W1lQw-unsplash.jpg");
+  background-size: cover;
+  /* background-size:contain; */
+  padding-top: 100px;
+}
+

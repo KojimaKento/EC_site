@@ -1,0 +1,15 @@
+.creators_body {
+  background-color: #fff;
+  width: 866px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 430px;
+  padding: 30px 50px;
+}
+
+.creators_contents {
+  border: solid 1px gray;
+  border-radius: 4px;
+  height: 100px;
+  width: 200px;
+}
