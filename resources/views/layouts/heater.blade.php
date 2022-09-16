@@ -32,7 +32,7 @@
         <div class="login_user">
           <a class="username_text" href="{{ route('home') }}">{{ Auth::user()->username }}</a>
 
-          <a class="dropdown-item" href="{{ route('logout') }}"
+          <a class="logout_btn" href="{{ route('logout') }}"
             onclick="event.preventDefault();
                           document.getElementById('logout-form').submit();">
             <!-- {{ __('Logout') }} -->

@@ -24,10 +24,16 @@
 
 .heater_search {
   padding-top: 20px;
-  margin-left: 100px;
+  margin-left: 50px;
+  display: flex;
 }
 
-.heater_search .search_input {
+.heater_search form {
+  display: flex;
+}
+
+.search_input {
+  display: block;
   width: 300px;
   height: 30px;
   padding-left: 10px;
@@ -40,6 +46,9 @@
   width: 50px;
   height: 30px;
   text-align: center;
+  display: block;
+  border-radius: 4px;
+  margin-left: 10px;
 }
 
 
@@ -89,7 +98,7 @@
   font-family:メイリオ;
 }
 
-.heater_body .dropdown-item {
+.heater_body .logout_btn {
   display: block;
   margin-left: 10px;
   font-weight: 700;
