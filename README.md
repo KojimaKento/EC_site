@@ -1,64 +1,103 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# アプリ
+### クリエイター向けのECサイト
+# 概要
+このアプリでは、クリエイターのデジタルデータを出品、購入できるECサイトです。デジタルもモノを中心に扱っているECサイトです。
+# 制作背景(意図)
+このクリエイター向けのデジタルデータのECサイトを作成した背景には２つの理由があります。<br>
+1つ目はクリエイターがマネタイズできる手段を増やすです。クリエイター（絵本作家、アーティスト、漫画家など）の主な収益として物販と完成した作品だと思います。主にその２つのモノで作品に必要なお金やクリエイターの生活費にあてられると思います。その２つのモノ以外に収益を生み出すことができれば、創作できる作品にあてられる金額をあげることができそれに伴って作品の質をあげることができること、クリエイターの生活費に活かせるなどメリットが増えると思います。なので、新たな収益を生み出す１つの手段として「作品の制作過程の販売」があると思います。制作過程で生まれるモノとして、音楽では世には出ていないが候補として出ていたBタイプ、制作過程の風景・動画、イラスト・アニメなどがあると思います。こういったモノはファンにとっては価値があるモノだと思うので、クリエイターの収益に繋げられると思いました。<br>
+２つ目はデジタルデータに着目しました。近年、NFTなどのデジタルのモノに価値があり販売などがされています。なので、アナログのモノのみでなくデジタルといった形も販売の形としては可能性があると感じています。また、デジタルデータであれば出品するにもサクッと出品できる手軽さもあります。
+# DEMO
+## トップページ
+クリエイターの出品された作品が表示されます。作品には、出品個数、金額が表示されています。作品をクリックするとその作品の詳細画面に遷移します。検索蘭がありますが、今後クリエイターや作品を検索できるように機能を作成する予定です。
+## 新規登録画面
+名前、メールアドレス、ユーザーネーム、パスワード、確認用パスワードで登録することができます。
+## ログイン画面
+すでに登録してあるユーザーが、メールアドレスとパスワードでログインすることができます。
+## 作品詳細画面
+その作品のタイトル、出品数、金額、作品に込めた想いが記載されています。また、ファンの応援という意味も込めて実際にクリエイターに入る金額も表示しています。
+## 購入画面
+購入画面には、作品のタイトル、作品、個数選択、金額が表示されています。購入確認ボタンをクリックすると購入確認画面に遷移します。
+## 購入確認画面
+その購入予定の作品の、タイトル、作品、金額が表示されます。購入するボタンをクリックすると購入が完了し、購入完了画面に遷移します。
+## 購入完了画面
+作品の購入が完了し完了画面に遷移します。
+## ユーザーマイページ
+ログインしているユーザーのユーザー名、クリエイター名（職種）、プロフィールが表示されています。「作品を出品する」をクリックすれば、作品出品画面に遷移します。「出品一覧へ」をクリックすれば、ログインしている作品出品一覧画面に遷移します。「購入一覧へ」をクリックすれば、ログインしている作品購入一覧画面に遷移します。
+## ユーザー情報編集画面
+ログインしているユーザーのユーザー名、クリエイター名（職種）、プロフィールを編集することができます。
+## 作品出品画面
+出品する作品のタイトル、デジタルデータ、金額、出品個数、作品への想いを入力できます。タイトルは20文字以内、金額は数字・500円以上、個数には数字・1個以上、作品説明は255文字以内でそれぞれバリデーションをかけています。
+## 作品出品確認画面
+出品画面で入力した、タイトル、作品、金額、出品個数、作品説明が表示されます。「出品する」ボタンをクリックすれば出品が完了し、出品完了画面に遷移します。
+## 作品出品完了画面
+出品が完了し、出品しましたとの記載がされています。
+## 作品出品一覧画面
+ログインしているユーザーが出品した作品が一覧として表示されます。作品をクリックすればその作品の詳細画面に遷移します。
+## 作品購入一覧画面
+ログインしているユーザーが購入した作品が一覧として表示されます。作品をクリックすればその作品の詳細画面に遷移します。
+# 使用技術（開発環境）
+## バックエンド
+PHP,Laravel
+## フロントエンド
+HTML,CSS
+## データベース
+MySQL
+## ソース管理
+GitHub
+## エディタ
+VScode
+## サーバー
+Docker
+# 課題や今後実装したい機能
+- クリエイター名や作品の検索機能
+- 各クリエイターのユーザー画面
+# DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|id|bigint(20) unsigned|null: NO|
+|name|varchar(255)|null: NO|
+|email|varchar(255)|null: NO|
+|email_verified_at|timestamp|null: YES|
+|password |varchar(255)|null: NO|
+|remember_token|varchar(100)|null: YES|
+|created_at|timestamp|null: YES|
+|updated_at|timestamp|null: YES|
+|username|varchar(255)|null: NO|
+|profile|text|null: YES|
+|admin|int(11)|null: YES|
+|creator_type|varchar(255)|null: YES|
+## Association
+- has_many :listings
+- has_many :buys
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## listingsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|id|bigint(20) unsigned|null: NO|
+|user_id|int(11)|null: YES|
+|title|text|null: NO|
+|file_name|varchar(255)|null: NO|
+|listing_data|varchar(255)|null: NO|
+|price|int(11)|null: NO|
+|listing_quantity|text|null: NO|
+|explanation|text|null: NO|
+|created_at|timestamp|null: YES|
+|updated_at|timestamp|null: YES|
+## Association
+- belongs_to :user
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## buysテーブル
+|Column|Type|Options|
+|------|----|-------|
+|id|bigint(20) unsigned|null: NO|
+|user_id|int(11)|null: NO|
+|listing_id|int(11)|null: NO|
+|bought_title|text|null: NO|
+|bought_data|varchar(255)|null: NO|
+|bought_price|int(11)|null: NO|
+|bought_quantity|varchar(255)|null: YES|
+|created_at|timestamp|null: YES|
+|updated_at|timestamp|null: YES|
+## Association
+- belongs_to :user
